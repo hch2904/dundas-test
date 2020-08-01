@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dundas Test</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="./js/app.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="heading-wrap">
+            <h2>Sample Page Heading</h2>
+        </div>
+        <div class="form-wrap">
+            <div id="input-group" class="input-group-wrap">
+                <input placeholder="Enter <name>=<value>"" type="text" id="user-input" class="input">
+                <button id="add-item" class="btn-primary">Add</button>
+            </div>
+        </div>
+        <div class="action-wrap">
+            <div class="button-row">
+                <button id="sort-by-name" class="btn-primary">Sort By Name</button>
+                <button id="sort-by-value" class="btn-primary">Sort By Value</button>
+                <button id="delete-all" class="btn-primary">Delete</button>
+                <button id="parse-as-xml" class="btn-primary">Parse as XML</button>
+            </div>
+            <div class="data-display-wrap">
+                <div id="unorderd-list-wrap" class="name-value-list-wrap">
+                    <ul id="unordered-list" class="unordered-list"></ul>
+                </div>
+                <div class="xml-wrap">
+                    <div id="xml-data-wrap" lang="xml" ></div>
+                    <textarea id="xml-data-holder" disabled class="xml-text-area-wrap"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
